@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Figtree', sans-serif;
+
+}
+
+.card-perfil-aluno {
+    display: flex;
+    height: 100%;
+    margin: 1%;
+
+}
+
+.card-exibicao-perfil-aluno {
+    box-shadow: 0px 1px 10px #79797993;
+    border: solid #ffffffbb 1px;
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    background-color: #ffffffbb;
+
+}
+
+.h1-card-login {
+    color: white;
+    font-size: 2em;
+
+}
+
+.hr-card-login {
+    width: 90%;
+    margin-top: 5%;
+    border-radius: 50px;
+    color: #ffffffbb;
+}
+
+.card-nav-bar-perfil-aluno {
+    width: 20%;
+    background-color: #010039;
+    border-radius: 10px;
+    margin-top: 5%;
+}
+
+.nav-bar-perfil-aluno {
+
+    width: 100%;
+
+    height: 100%;
+
+    box-shadow: 1px 0px 10px #000000;
+
+    border-radius: 10px;
+}
+
+.nav-bar-perfil-aluno>h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 10%;
+    font-size: 1.5em;
+}
+
+
+
+.imagem-perfil-aluno {
+
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0px 1px 10px #000000;
+    margin-left: 20%;
+    margin-right: 15%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+
+}
+
+.ul-nav-bar-perfil-aluno,
+.li-nav-bar-perfil-aluno,
+.li-nav-bar-perfil-aluno a {
+
+
+    text-decoration: none;
+    list-style: none;
+
+}
+
+
+.li-nav-bar-perfil-aluno {
+
+    transition: ease-in-out 0.5s;
+    padding: 5px;
+    font-size: 1em;
+
+}
+
+.li-nav-bar-perfil-aluno:hover {
+    transition: ease-in-out 1s;
+    background-color: #ffffffe3;
+    color: #000000;
+}
+
+.li-nav-bar-perfil-aluno a:hover {
+    color: #000000;
+    transition: ease-in-out 0.5s;
+
+}
+
+.li-nav-bar-perfil-aluno a {
+    color: rgba(255, 255, 255, 0.918);
+    transition: ease-in-out 1s;
+}
+
+
+.li-nav-bar-perfil-aluno p {
+    margin-left: 15%;
+    font-size: 105%;
+    display: inline;
+}
+
+
+.card-login {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 35px 35px;
+    background: #010039;
+    border-radius: 20px;
+    border: solid black 1px;
+    transition: ease-in-out 1s;
+    margin-left: 23%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.card-login::placeholder {
+    color: #ffffffc9
+}
+
+.card-login:hover {
+    box-shadow: 0px 10px 20px rgb(0, 0, 0);
+    transition: ease-in-out 1s;
+}
+
+.form-login {
+
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.lbl-h1-title-form-perfil h1 {
+    color: white;
+    font-size: 1.4em;
+    margin-top: 10%;
+}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 25px 0px;
+}
+
+.textfield>input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #16144c;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px black;
+    outline: none;
+    box-sizing: border-box;
+    user-select: none;
+    color: #ffffffc9;
+}
+
+.textfield>label {
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+
+.textfield>input::placeholder {
+    color: #ffffffc9;
+}
+
+.textfield>a {
+
+    margin-top: 20px;
+    text-decoration: none;
+    color: #F39322;
+}
+
+.textfield>a:hover {
+
+    transition: 1s;
+    color: #F39322;
+}
+
+.textarea-biografia {
+    resize: none;
+    font-family: "Figtree";
+    width: 100%;
+    height: 200px;
+    color: #ffffffc9;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #16144c;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px black;
+    outline: none;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.textarea-biografia::placeholder {
+    color: #ffffffc9;
+}
+
+
+.btn-login {
+
+    font-size: -1em;
+    width: 100%;
+    padding: 16px 0px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-weight: 800;
+    color: #04022d;
+    background: #ff9216;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.btn-login:hover {
+    box-shadow: 0px 10px 20px -12px #F39322;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.tipo_de_curso{
+    background-color: #16144c;
+    border-radius: 10px;
+    color: white;
+    width: 90%;
+    font-size: 1.2em;
+    padding: 5px;
+}

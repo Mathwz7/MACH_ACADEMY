@@ -1,0 +1,767 @@
+@import url('https://fonts.googleapis.com/css2? family= Noto+Sans:wght@500;600 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    /* font-family: 'Noto Sans', sans-serif; */
+    font-family: 'Figtree', sans-serif;
+
+
+}
+
+.banner {
+
+    width: 100%;
+
+}
+
+.imagem-banner {
+    width: 100%;
+
+    margin-bottom: 0;
+
+}
+
+
+/* Vídeo */
+
+
+
+.videoyoutube {
+
+
+    position: relative;
+    width: 60vw;
+    height: 75vh;
+
+}
+
+.videoyoutube>iframe {
+    width: 100%;
+    height: 108%;
+    position: absolute;
+    margin: 10%;
+
+}
+
+/* Menu */
+
+.card-menu-direita {
+
+    width: 30vw;
+    height: 100vh;
+    float: right;
+
+
+
+}
+
+.card-menu-direita>label {
+
+    width: 50vw;
+    height: 100vh;
+    float: right;
+
+
+}
+
+.card {
+
+
+
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 27%;
+    background-color: rgb(250, 250, 255);
+    /* margin-right: 0.5%; */
+    margin-left: 1%;
+    margin-top: 6%; 
+    box-shadow: 0px 1px 3px rgb(87, 87, 87);
+    border-radius: 10px;
+    flex-direction: column;
+    z-index: 1;
+    position: absolute;
+    
+    transition: ease-in-out 1s;
+}
+
+.card:hover {
+    box-shadow: 0px 1px 10px rgb(0, 0, 0);
+    transition: ease-in-out 1s;
+}
+
+
+.h1-conteudo-curso {
+
+    margin-bottom: 5%;
+    font-size: 1.5em;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+
+}
+.capa-video{
+    margin: 0% 5% 0% 5%;
+    width: 90%;
+}
+
+.menu-direita {
+
+    margin-left: 5%;
+    margin-top: 10%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    height: 100%;
+    padding: 5px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    overflow: auto;
+}
+
+
+
+/* aulas */
+
+.title-aula {
+
+    margin-left: 5px;
+    font-size: 19px;
+
+
+}
+
+.aula:hover {
+    transition: all 0.5s ease-in-out;
+    background-color: #ececece3;
+
+}
+
+.aulas-wrapper:hover {
+
+    transition: all 1s ease-in-out;
+
+    box-shadow: 0px 1px 6px black;
+
+
+}
+
+.curso-nome{
+    padding: 5%;
+}
+
+
+.aulas-wrapper {
+
+
+    font-size: 1.2em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: 0px 1px 5px #636363e4;
+    /* border: solid 2px #110b54;*/
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 3%;
+    transition: all 1s ease-in-out;
+
+}
+
+.aulas-wrapper>label {
+
+
+    cursor: pointer;
+
+}
+
+
+
+
+
+.aulas ul li a {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    background: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+
+    border-bottom: none;
+    display: none;
+
+
+}
+
+
+
+/* Modulos */
+
+.modulo-title {
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: .3s ease-in-out;
+
+
+
+}
+
+.modulo-title::after {
+    content: "+";
+    transition: .3s ease-in-out;
+    float: right;
+    width: 5%;
+    color: #110b54;
+
+
+
+}
+
+.modulos:checked+.aulas-wrapper .modulo-title::after {
+    display: inline-block;
+    transition: .3s ease-in-out;
+    transform: rotate(45deg);
+    color: #110b54;
+
+}
+
+
+.modulos:checked+.aulas-wrapper .slide-aulas {
+
+    height: 135px;
+}
+
+.slide-aulas {
+
+    height: 0;
+    overflow: hidden;
+    transition: .4s ease;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+
+}
+
+
+
+
+.modulos:checked+.aulas-wrapper ul li a {
+
+    display: block;
+
+}
+
+.modulos[type="checkbox"] {
+    display: none;
+}
+
+
+
+
+/* Descrição */
+
+.title-descricao {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    margin-left: 5%;
+    padding: 10px;
+    background-color: #151143;
+    color: white;
+    top: -30px;
+    border-radius: 10px 10px 1px 1px;
+    box-shadow: 0px 1px 3px rgb(74, 74, 74);
+
+}
+
+.card-desc {
+
+
+    margin-left: 6%;
+    margin-top: 15%;
+    display: flex;
+    width: 60vw;
+    background-color: rgb(250, 250, 255);
+    box-shadow: 0px 1px 3px rgb(74, 74, 74);
+    border-radius: 5px;
+    position: relative;
+
+}
+
+.descricao {
+
+    text-align: justify;
+    display: flex;
+    margin: 5%;
+}
+
+.descricao h1 {
+
+    font-size: 1em;
+    margin-left: 5%;
+
+}
+
+.desc-direita {
+    width: 50%;
+    margin-left: 30%;
+}
+
+.desc-esquerda {
+    width: 50%;
+}
+
+.desc-direita,
+.desc-esquerda {
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+
+
+}
+
+
+
+.desc-inscritos h1 {
+
+
+    font-size: 1em;
+    margin-left: 5%;
+}
+
+
+.descricao p {
+    margin-top: 2%;
+
+}
+
+.descricao h1 {
+    margin-top: 2%;
+}
+
+.icons-descricao {
+    width: 35%;
+}
+
+
+.icons {
+    display: flex;
+    align-items: center;
+
+}
+
+/* avaliação */
+
+.avaliacao h1 {
+    text-align: center;
+    margin-top: 10%;
+    color: #1c3dcf;
+    font-size: 2.5em;
+}
+
+.icons-curso {
+
+    padding: 0;
+
+}
+
+.li-img-cursos {
+    display: flex;
+    margin-bottom: 3%;
+
+
+}
+
+.paraf {
+    margin-left: 5%;
+    text-align: justify;
+}
+
+.animation-avaliacao {
+    width: 45%;
+    margin-left: 30%;
+}
+
+/* info valor e btn comprar */
+
+.compra{
+    margin-top: 10%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.valor-exibicao{
+    
+    font-size: 3.5em;
+    text-align: center;
+    
+}
+
+.btn-comprar{
+   width: 80%;
+   padding: 1em;
+    margin-top: 5%;
+    background-color: #F39322;
+    color: #09062e;
+    border-radius: 3.25em;
+    border: 0;
+    transition: ease-in-out 1s;
+   
+}
+
+.btn-comprar:hover
+{
+    box-shadow: 0px 1px 10px #F39322;
+    transition: ease-in-out 1s;
+}
+
+
+/* slider de avaliação */
+
+.avaliacoes {
+
+    width: 80vw;
+    height: 40vh;
+    margin-bottom:10%;
+   
+}
+
+.slider-avaliacao {
+    display: block;
+    width: 70%;
+    height: 40%;
+
+    margin: 5% 10%;
+    position: relative;
+}
+
+.slider-avaliacao li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider-avaliacao .card-profissionais {
+
+    vertical-align: top;
+    transition: linear 1s;
+}
+
+.slider-avaliacao input {
+    display: none;
+}
+
+.slider-avaliacao label {
+    background-color: #1c3dcf;
+    transition: linear 1s;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+    border-radius: 100%;
+    top: 100%;
+
+}
+
+.slider-avaliacao li:nth-child(1) label {
+    left: 10px;
+}
+
+.slider-avaliacao li:nth-child(2) label {
+    left: 40px;
+}
+
+.slider-avaliacao li:nth-child(3) label {
+    left: 70px;
+}
+
+.slider-avaliacao .card-profissionais {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider-avaliacao li input:checked~.card-profissionais {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+.nav-bar-avaliacao {
+
+    margin-left: 45%;
+
+
+}
+
+/* profissionais */
+
+.card-profissionais {
+    background-color: rgb(25, 10, 63);
+    height: 40vh;
+    width: 80vw;
+    color: white;
+    margin-bottom: 5%;
+
+    border-radius: 10px;
+    display: flex;
+
+}
+
+/* lado esquerdo card prof-image */
+
+.h1-card-profissionais {
+
+    
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    font-size: 1.3em;
+    text-align: center;
+
+}
+
+.card-profissional-image {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    background-color: #1c3dcf;
+    cursor: pointer;
+    border-radius: 10px 0 0 10px;
+
+}
+
+
+
+
+.profile-image {
+
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0px 1px 10px #F39322;
+    margin-left: 20%;
+
+}
+
+/* lado direito card prof-desc */
+
+.card-profissional-desc {
+
+    width: 70%;
+    display: flex;
+    text-align: justify;
+    line-height: 1.5em;
+    margin-left: 5%;
+    
+}
+
+.p-card-profissional-desc {
+
+    margin-block-start: 3em;
+    display: flex;
+    font-size: 130%;
+
+}
+
+
+
+
+/* 
+
+CÓDIGO ANTES DO SLIDER
+
+profissonais */
+/* 
+.card-profissionais{
+    background-color:rgb(25, 10, 63);
+    height: 40vh;
+    width: 80vw;
+    color: white;
+    margin: 5% 10%;
+    
+    border-radius: 10px;
+    display: flex;
+    
+}
+
+ lado esquerdo card prof-image 
+
+.h1-card-profissionais{
+
+width: 50%;
+margin-left: 25%;
+margin-bottom: 5%;
+margin-top: 5%;
+text-align: center; 
+
+}
+
+.card-profissional-image{  
+width: 20%;
+display: flex;
+flex-direction: column;
+background-color: #1c3dcf;
+cursor: pointer;
+border-radius: 10px 0 0 10px;
+
+}
+
+
+
+
+.profile-image{
+
+width: 150px;
+height: 150px;
+border-radius: 50%;
+box-shadow:0px 1px 10px #F39322;
+margin-left:15%;
+
+}
+
+lado direito card prof-desc 
+
+.card-profissional-desc{
+
+width: 70%;
+display: flex;
+text-align: justify;
+line-height: 1.5em;
+margin-left: 5%;
+margin-top: 2%
+}
+
+.p-card-profissional-desc {
+   
+    margin-block-start: 1em;
+   display: flex;
+  
+}
+
+
+ */
+
+.background-professor {
+    width: 100%;
+    margin-top: 10%;
+    background-color: rgb(6, 6, 43);
+    display: inline-flex;
+}
+
+.professor {
+
+    margin-left: 5%;
+    display: flex;
+}
+
+.interprete {
+
+    display: flex;
+    width: 50%;
+    flex-direction: row-reverse;
+}
+
+.interprete .color {
+    background-color: #016ba5;;
+}
+
+.interprete .text-container h3 {
+    color: white;
+}
+
+.interprete .no-color h3 {
+    color: #016ba5;;
+}
+
+.a-box {
+    display: inline-block;
+    width: 240px;
+    text-align: center;
+}
+
+.img-container {
+    height: 230px;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 0px 0px 20px 20px;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+}
+
+.img-container img {
+    transform: skew(0deg, -13deg);
+    height: 250px;
+    margin: -35px 0px 0px -35px;
+}
+
+.inner-skew {
+    display: inline-block;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 0px;
+    transform: skew(0deg, 13deg);
+    font-size: 0px;
+    margin: 30px 0px 0px 0px;
+    background: #c8c2c2;
+    height: 250px;
+    width: 200px;
+}
+
+
+
+.color {
+    background-color: #1c3dcf;
+    width: 40%;
+    height: 100%;
+    display: inline-block;
+    padding: 120px 20px 0px 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 1px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 1px;
+    color: white;
+    transform: translate(-12%, -3.5%);
+    position: relative;
+    z-index: 1;
+}
+
+.no-color {
+    width: 200px;
+    transform: translate(0%, -0%);
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+.text-container {
+    width: 500px;
+    height: 350px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    background: #fff;
+    margin: -120px 0px 0px 0px;
+    line-height: 19px;
+    font-size: 14px;
+}
+
+.text-container h3 {
+    display: inline-block;
+    margin: 20px 0px 10px 0px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+.no-color h3 {
+    color: #1c3dcf;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
